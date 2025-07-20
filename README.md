@@ -1,8 +1,8 @@
-DevOps Practice Projects
+#DevOps Practice Projects
 
 This repository contains my solutions and work for various DevOps projects, ranging from beginner to advanced levels. These projects are based on the roadmap.sh DevOps project ideas.
 
-Project Structure
+Project Structure :
 Each project is contained in its own directory under the projects/ folder.
 
 Projects List :
