@@ -1,4 +1,3 @@
-Project : https://roadmap.sh/projects/server-stats
 
 First script towards learning linux and shell scripting 
 
