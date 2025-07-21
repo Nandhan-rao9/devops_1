@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'Projects/4.github_pages_deployment/**'
+      - 'Projects/4.0.github_pages_deployment/**'
 
 jobs:
   ftp-deploy:
@@ -20,5 +20,5 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./Projects/4.github_pages_deployment
+          local-dir: ./Projects/4.0.github_pages_deployment
           server-dir: /htdocs/
