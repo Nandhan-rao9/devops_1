@@ -1,4 +1,4 @@
-name: Deploy 4.github_pages_deployment to GitHub Pages
+name: Deploy to InfinityFree via FTP
 
 on:
   push:
@@ -8,16 +8,17 @@ on:
       - 'Projects/4.github_pages_deployment/**'
 
 jobs:
-  deploy:
+  ftp-deploy:
     runs-on: ubuntu-latest
     steps:
-      # Step 1: Get the code from your repo
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Step 2: Deploy just your chosen folder to gh-pages branch
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4
         with:
-          publish_dir: ./Projects/4.github_pages_deployment
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./Projects/4.github_pages_deployment
+          server-dir: /htdocs/
