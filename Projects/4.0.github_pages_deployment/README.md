@@ -69,4 +69,23 @@ to **GitHub Pages** using GitHub Actions for continuous deployment.
 | Issue                                | What Happened                                                 | Solution                                                                                 
 | ------------------------------------ | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------- 
 | Workflow not running                 | Placed `.github/workflows` inside a project folder by mistake | Moved `.github/workflows` to the root of the repository                                  
+| No `gh-pages` branch created         | Workflow didn’t create `gh-pages` branch                      | Fixed folder, permissions, and triggered a push to create the branch                     
+| Permission denied (403)              | Workflow error: “Permission denied to github-actions\[bot]”   | Set workflow permissions to “Read and write” in repo settings                            
+| README showing instead of index.html | GitHub Pages displayed README instead of my website           | Ensured valid `index.html` was present at the root of `gh-pages` branch, not just README 
+| Delay/cache issues                   | Sometimes changes took a while to appear                      | Waited a minute and forced browser refresh                                               
+
+---
+
+## ✨ **Final Takeaways**
+
+* Learned how to deploy a **specific folder** from a multi-project repo to GitHub Pages.
+* Got comfortable with **GitHub Actions** and CI/CD automation.
+* Solved real-life DevOps mistakes with file structure and permissions.
+* Now my site updates itself every time I make a change—DevOps magic!
+
+---
+
+> **Deploying is so much more fun (and less scary) when it’s automated!**
+>
+> *Want to see it live? Check it out here:*
 > [https://nandhan-rao9.github.io/devops\_1/](https://nandhan-rao9.github.io/devops_1/)
