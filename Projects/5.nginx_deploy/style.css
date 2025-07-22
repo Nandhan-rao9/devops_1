@@ -1,0 +1,59 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #222;
+  height: 100%;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body, .container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 40px 24px;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #0001;
+  background: #fff;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: color 0.2s;
+}
+
+button {
+  padding: 10px 28px;
+  font-size: 1rem;
+  border: 1px solid #222;
+  border-radius: 7px;
+  background: transparent;
+  color: #222;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, transform 0.1s;
+  outline: none;
+}
+button:hover, button:focus {
+  background: #222;
+  color: #fff;
+  transform: scale(1.03);
+}
+
+.pop {
+  animation: popAnim 0.35s;
+}
+@keyframes popAnim {
+  0% { opacity: 1; transform: scale(1);}
+  40% { opacity: 0.5; transform: scale(1.13);}
+  100% { opacity: 1; transform: scale(1);}
+}

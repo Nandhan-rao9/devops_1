@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minimalist Greeting</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="greetText">Hello, Visitor!</h1>
+    <button id="surpriseBtn">Greet Me</button>
+  </div>
+  <script>
+    const greetings = [
+      "Welcome to my site!",
+      "Hope you have a wonderful day.",
+      "You're awesome!",
+      "Hello, friend!",
+      "Nice to see you here!",
+      "Enjoy your stay!"
+    ];
+    document.getElementById("surpriseBtn").onclick = function () {
+      const greet = greetings[Math.floor(Math.random() * greetings.length)];
+      const text = document.getElementById("greetText");
+      text.innerText = greet;
+      // Animation: fade and scale
+      text.classList.remove("pop");
+      void text.offsetWidth; // force reflow
+      text.classList.add("pop");
+    };
+  </script>
+</body>
+</html>
