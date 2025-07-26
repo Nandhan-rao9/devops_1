@@ -37,7 +37,7 @@ A step-by-step project for deploying a static website to an AWS EC2 instance usi
 - Restrict your `.pem` permissions:
   ```powershell
   icacls "C:\path\to\2.pem" /inheritance:r /grant:r "%username%:R"
-````
+
 
 * SSH into EC2:
 

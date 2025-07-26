@@ -18,8 +18,8 @@ Each project is contained in its own directory under the `projects/` folder.
 - [x] **Nginx Log Analyser**(https://roadmap.sh/projects/nginx-log-analyser)
 - [x] **GitHub Pages Deployment**(https://roadmap.sh/projects/github-actions-deployment-workflow)
 - [ ] **SSH Remote Server Setup**
-- [ ] **Static Site Server**
-- [ ] **Basic DNS Setup**
+- [x] **Static Site Server**(https://roadmap.sh/projects/static-site-server)
+- [x] **Basic DNS Setup**(https://roadmap.sh/projects/basic-dns)
 - [ ] **Simple Monitoring**
 - [ ] **Dummy Systemd Service**
 - [ ] **Basic Dockerfile**
