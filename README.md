@@ -22,7 +22,7 @@ Each project is contained in its own directory under the `projects/` folder.
 - [x] **Basic DNS Setup**(https://roadmap.sh/projects/basic-dns)
 - [ ] **Simple Monitoring**
 - [ ] **Dummy Systemd Service**
-- [ ] **Basic Dockerfile**
+- [x] **Basic Dockerfile**(https://roadmap.sh/projects/basic-dockerfile)
 - [ ] **EC2 Instance**
 
 ### 🟡 Intermediate Projects
