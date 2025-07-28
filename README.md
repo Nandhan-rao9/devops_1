@@ -23,7 +23,7 @@ Each project is contained in its own directory under the `projects/` folder.
 - [ ] **Simple Monitoring**
 - [ ] **Dummy Systemd Service**
 - [x] **Basic Dockerfile**(https://roadmap.sh/projects/basic-dockerfile)
-- [ ] **EC2 Instance**
+- [x] **EC2 Instance**(https://roadmap.sh/projects/ec2-instance)
 
 ### 🟡 Intermediate Projects
 - [ ] **Configuration Management (Ansible)**
