@@ -1,0 +1,5 @@
+---
+- name: Add SSH public key to the server
+  authorized_key:
+    user: yousef
+    key: "{{ lookup('file', '/home/yousef/.ssh/id_ed25519.pub') }}"

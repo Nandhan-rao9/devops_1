@@ -1,0 +1,13 @@
+---
+- name: Update all packages
+  dnf:
+    name: "*"
+    state: latest
+
+- name: Install useful utilities
+  dnf:
+    name: 
+      - git
+      
+    state: present
+
