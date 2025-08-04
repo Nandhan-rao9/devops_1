@@ -5,3 +5,4 @@
     - { role: base, tags: ["base"] }
     - { role: app, tags: ["app"] }
     - { role: ssh, tags: ["ssh"] } 
+    - { role: nginx, tags: ["nginx"] }
