@@ -1,0 +1,7 @@
+---
+
+- name: Upload website tarball
+  copy:
+    src: website.tar.gz
+    dest: /tmp/website.tar.gz
+  tags: app

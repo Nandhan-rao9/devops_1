@@ -1,33 +1,14 @@
-- name: Update yum
-  yum:
+
+---
+- name: Update all packages
+  dnf:
     name: "*"
     state: latest
-  tags: base
 
-- name: Install common tools
-  yum:
-    name:
+- name: Install useful utilities
+  dnf:
+    name: 
       - git
-      - curl
-      - htop
+      
     state: present
-  tags: base
 
-- name: Install fail2ban
-  yum:
-    name: epel-release
-    state: present
-  tags: base
-
-- name: Install fail2ban package
-  yum:
-    name: fail2ban
-    state: present
-  tags: base
-
-- name: Enable and start fail2ban
-  service:
-    name: fail2ban
-    state: started
-    enabled: true
-  tags: base
