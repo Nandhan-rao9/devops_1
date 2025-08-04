@@ -1,0 +1,6 @@
+- name: Add SSH key for ec2-user
+  authorized_key:
+    user: ec2-user
+    state: present
+    key: "{{ lookup('file', 'id_rsa.pub') }}"
+  tags: ssh
