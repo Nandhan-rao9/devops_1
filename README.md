@@ -26,7 +26,7 @@ Each project is contained in its own directory under the `projects/` folder.
 - [x] **EC2 Instance**(https://roadmap.sh/projects/ec2-instance)
 
 ### 🟡 Intermediate Projects
-- [ ] **Configuration Management (Ansible)**
+- [x] **Configuration Management (Ansible)**(https://roadmap.sh/projects/configuration-management)
 - [ ] **IaC on DigitalOcean (Terraform)**
 - [ ] **Node.js Service Deployment (CI/CD)**
 - [ ] **Dockerized Service**
