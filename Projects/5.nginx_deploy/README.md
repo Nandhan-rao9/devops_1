@@ -34,24 +34,16 @@ A step-by-step project for deploying a static website to an AWS EC2 instance usi
 ## 2️⃣ Connect to Your EC2 via SSH
 
 - Open **PowerShell** or **Windows Terminal**.
-- Restrict your `.pem` permissions:
-  ```powershell
-  icacls "C:\path\to\2.pem" /inheritance:r /grant:r "%username%:R"
+```
+ ssh -i "2.pem" ec2-user@<ip-addr>.eu-north-1.compute.amazonaws.com
+```
 
-
-* SSH into EC2:
-
-  ```powershell
-  ssh -i "C:\path\to\2.pem" ec2-user@your-ec2-public-dns
-  ```
-
----
 
 ## 3️⃣ Install & Start Nginx
 
 ```bash
 sudo yum update -y
-sudo amazon-linux-extras install nginx1 -y
+sudo yum install nginx -y
 sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
@@ -65,7 +57,7 @@ sudo systemctl enable nginx
 By default, only `root` can write to Nginx's web root. Give permission to `ec2-user`:
 
 ```bash
-sudo chown -R ec2-user:ec2-user /usr/share/nginx/html/
+chmod 600 /home/ec2-user/.ssh/2.pem
 ```
 
 ---
@@ -82,18 +74,6 @@ scp -i "C:\path\to\2.pem" -r "C:\path\to\your-site\*" ec2-user@your-ec2-public-d
 * `-r`: Recursively upload all files/folders
 * Replace `C:\path\to\your-site\*` with your project path
 
-### (Or) Using WinSCP (GUI):
-
-1. Use [PuTTYgen](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to convert `.pem` to `.ppk`.
-2. In WinSCP:
-
-   * Protocol: SFTP
-   * Host name: `your-ec2-public-dns`
-   * User: `ec2-user`
-   * Key file: Your `.ppk`
-3. Upload files to `/usr/share/nginx/html/`.
-
----
 
 ## 6️⃣ View Your Live Website
 
