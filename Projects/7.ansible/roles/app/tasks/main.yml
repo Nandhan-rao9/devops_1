@@ -1,5 +1,4 @@
 ---
-
 - name: Upload website tarball
   copy:
     src: website.tar.gz
