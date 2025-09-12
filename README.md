@@ -28,7 +28,7 @@ Each project is contained in its own directory under the `projects/` folder.
 ### 🟡 Intermediate Projects
 - [x] **Configuration Management (Ansible)**(https://roadmap.sh/projects/configuration-management)
 - [ ] **IaC on DigitalOcean (Terraform)**
-- [ ] **Node.js Service Deployment (CI/CD)**
+- [..] **Node.js Service Deployment (CI/CD)**
 - [ ] **Dockerized Service**
 - [ ] **Multi-Container Application (Docker Compose)**
 - [ ] **Automated DB Backups**
